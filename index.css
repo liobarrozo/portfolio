@@ -4,19 +4,23 @@
 
 .home{
     background-color:white;
-    height: 100vh;
+    height: 93vh;
     display: flex;
     flex-direction: column;
     background-image: url(/portfolio/src/puntitos.png);
-    padding-bottom: 20px;
-
+    /*padding-bottom: 20px;*/
+}
+@media(min-width: 769px){
+    .home{
+        height: 100vh;
+    }
 }
 header{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 15px;
-    
+    height: 80px;
     
 }
 .logo{
@@ -39,23 +43,7 @@ header{
     color: white; /* Color del texto */
     cursor: pointer;
 }
-h1{
-    font-size: 50px;
-    font-weight: 900;
-    font-family: 'Open Sans', sans-serif;
-}
-#h1_up{
-    margin-top: 110px;
-}
-#h1_down{
 
-}
-#me-photo{
-    max-width: 65%;
-    height: auto;
-    margin-bottom: 0px;
-    margin-top: auto;
-}
 .header__options-button{
     display: none;
 }
@@ -75,4 +63,48 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+@media(min-width: 769px){
+    .home__welcome{
+        flex-direction:row;
+    }
+}
+
+.home__welcome-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+@media(min-width: 769px){
+    .home__welcome-text{
+    align-items: flex-start;
+    }
+}
+
+
+
+h1{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+}
+#h1_up{
+    margin-top: 110px;
+}
+
+#me-photo{
+    max-width: 65%;
+
+    height: auto;
+    margin-bottom: 0px;
+    margin-top: auto;
+}
+
+@media(min-width: 769px){
+    #me-photo{
+        max-width: 45%;
+        height: auto;
+        max-height: 100%;
+    }
 }
