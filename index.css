@@ -125,3 +125,24 @@ h1{
         margin-left: auto;
     }
 }
+
+/*ABOUT ME*/
+.about-me{
+    background-color: black;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+.home__container-texts{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    color: white;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text_about-me{
+    color: white;
+}
