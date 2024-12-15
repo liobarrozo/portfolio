@@ -116,33 +116,93 @@ h1{
     max-height: 100%;
 }
 
-@media(min-width: 769px){
-    #me-photo{
-        max-width: 45%;
-        height: auto;
-        max-height: 85%;
-        margin-right: 80px;
-        margin-left: auto;
+
+
+@media (max-width: 768px) {
+    #me-photo {
+        max-width: 100%; /* La imagen se adapta al ancho del contenedor */
+        max-height: 100%; /* Asegura que la imagen no exceda la altura del contenedor */
+        object-fit: contain; /* Mantiene las proporciones de la imagen */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        display: block; /* Asegura que la imagen respete las reglas de maquetación */
+    }
+    
+    .home__welcome {
+        overflow: hidden; /* Evita que los elementos desborden la sección */
     }
 }
+
 
 /*ABOUT ME*/
 .about-me{
     background-color: black;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-}
-.home__container-texts{
+    height: 95vh;
     display: flex;
     flex-direction: column;
-}
-h2{
-    color: white;
-    font-weight: 900;
-    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
-.text_about-me{
+@media(min-width: 769px){
+    .about-me{
+        flex-direction:row;
+    }
+}
+
+#img__verify{
+    order: 2;
+    width: 90px;
+    height: 90px;
+    margin: 80px;
+}
+
+@media(min-width: 769px){
+    #img__verify{
+        order: 1;
+        width: 170px;
+        height: 170px;  
+    }
+
+}
+.home__container-texts{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(min-width: 769px){
+    .home__container-texts{
+        width: 35%;
+        align-items: flex-start;
+    }
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    margin: 50px;
+}
+
+
+#h2__about-me{
     color: white;
+}
+
+@media(min-width: 769px){
+    #h2__about-me{
+        margin-bottom: 25px;
+    }
+}
+.text_about-me{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*Services*/
+
+#h2__services{
+    color: black;
 }
