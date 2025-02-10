@@ -1,103 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>liobarrozo</title>
-    <link rel="icon" href="/portfolio/src/liobarrozoLogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="/portfolio/src/liobarrozoLogo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <head>
-        <section class="home">
-            <header>
-                <img src="/portfolio/src/liobarrozoLogo.png" alt="" class="logo">
-                <button class="header__main-button"></button>
-                <div class="header__options-button">
-                    <button class="header__buttons">Quien Soy</button>
-                    <button class="header__buttons">Servicios</button>
-                    <button class="header__buttons">Escribime</button>
-                </div>
-            </header>
-            <div class="home__welcome">
-                <div class="home__welcome-text">
-                    <h1 id="h1_up">Bienvenidos</h1>
-                    <h1 id="h1_down">a mi sitio</h1>  
-                </div>              
-                <img src="/portfolio/src/fotoAlejo.png" alt="" id="me-photo">
-            </div>
-            <img src="" alt="" class="background">
-        </section>
-        <section class="about-me">
-            <img src="/portfolio/src/check.png" alt="" id="img__verify">
-            <div class="home__container-texts">
-                <h2 id="h2__about-me">Soy liobarrozo</h2>
-                <p class="text_about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ea, inventore est error cumque voluptate corrupti architecto eum, nisi facilis voluptatum. Neque et amet necessitatibus, omnis nobis doloremque. Maiores, dicta.Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ea, inventore est error cumque voluptate corrupti architecto eum, nisi facilis voluptatum. Neque et amet necessitatibus, omnis nobis doloremque. Maiores, dicta.</p>
-            </div>
-        </section>
-        <section class="service">
-            <h2 id="h2__services">Mis Servicios</h2>
-            <div class="service__content-container">
-                <div class="service__content">
-                    <img src="/portfolio/src/desktop 1.png" alt="" class="img__pc">
-                    <h3>Un servicio</h3>
-                    <p class="text_service">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius deleniti assumenda inventore! Doloribus impedit voluptatibus quidem totam nihil ipsa eos cumque ipsam, minima illum, tenetur tempore reprehenderit sed labore a!</p>
-                </div>
-                <div class="service__content">
-                    <img src="/portfolio/src/desktop 1.png" alt="" class="img__pc">
-                    <h3>Un segundo servicio</h3>
-                    <p class="text_service">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius deleniti assumenda inventore! Doloribus impedit voluptatibus quidem totam nihil ipsa eos cumque ipsam, minima illum, tenetur tempore reprehenderit sed labore a!</p>
-                </div>
-                <div class="service__content">
-                    <img src="/portfolio/src/desktop 1.png" alt="" class="img__pc">
-                    <h3>Un tercer servicio</h3>
-                    <p class="text_service">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius deleniti assumenda inventore! Doloribus impedit voluptatibus quidem totam nihil ipsa eos cumque ipsam, minima illum, tenetur tempore reprehenderit sed labore a!</p>
-                </div>
-            </div>
-        </section>
-        <section class="contact">
-            <h2>Escribime</h2>
-            <div class="contact__form">
-                <div class="contact__form-input" id="nombre">
-                    <label for="input-nombre" class="label-nombre">NOMBRE</label>
-                    <input type="text" id="input-nombre" class="input-nombre">
-                </div>
+      <section class="home">
+        <header>
+          <img src="/portfolio/src/liobarrozoLogo.png" alt="" class="logo" />
+          <button class="header__main-button"></button>
+          <div class="header__options-button">
+            <button class="header__buttons">Quien Soy</button>
+            <button class="header__buttons">Servicios</button>
+            <button class="header__buttons">Escribime</button>
+          </div>
+        </header>
+        <div class="home__welcome">
+          <div class="home__welcome-text">
+            <h1 id="h1_up">Bienvenidos</h1>
+            <h1 id="h1_down">a mi sitio</h1>
+          </div>
+          <img src="/portfolio/src/fotoAlejo.png" alt="" id="me-photo" />
+        </div>
+        <img src="" alt="" class="background" />
+      </section>
+      <section class="about-me">
+        <img src="/portfolio/src/check.png" alt="" id="img__verify" />
+        <div class="home__container-texts">
+          <h2 id="h2__about-me">Soy liobarrozo</h2>
+          <p class="text_about-me">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ea,
+            inventore est error cumque voluptate corrupti architecto eum, nisi
+            facilis voluptatum. Neque et amet necessitatibus, omnis nobis
+            doloremque. Maiores, dicta.Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Veniam ea, inventore est error cumque voluptate
+            corrupti architecto eum, nisi facilis voluptatum. Neque et amet
+            necessitatibus, omnis nobis doloremque. Maiores, dicta.
+          </p>
+        </div>
+      </section>
+      <section class="service">
+        <h2 id="h2__services">Mis Servicios</h2>
+        <div class="service__content-container">
+          <div class="service__content">
+            <img src="/portfolio/src/desktop 1.png" alt="" class="img__pc" />
+            <h3>Un servicio</h3>
+            <p class="text_service">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+              deleniti assumenda inventore! Doloribus impedit voluptatibus
+              quidem totam nihil ipsa eos cumque ipsam, minima illum, tenetur
+              tempore reprehenderit sed labore a!
+            </p>
+          </div>
+          <div class="service__content">
+            <img src="/portfolio/src/desktop 1.png" alt="" class="img__pc" />
+            <h3>Un segundo servicio</h3>
+            <p class="text_service">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+              deleniti assumenda inventore! Doloribus impedit voluptatibus
+              quidem totam nihil ipsa eos cumque ipsam, minima illum, tenetur
+              tempore reprehenderit sed labore a!
+            </p>
+          </div>
+          <div class="service__content">
+            <img src="/portfolio/src/desktop 1.png" alt="" class="img__pc" />
+            <h3>Un tercer servicio</h3>
+            <p class="text_service">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+              deleniti assumenda inventore! Doloribus impedit voluptatibus
+              quidem totam nihil ipsa eos cumque ipsam, minima illum, tenetur
+              tempore reprehenderit sed labore a!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h2>Escribime</h2>
+        <form id="contact__form" class="contact__form">
+          <div class="contact__form-input" id="nombre">
+            <label for="input-nombre" class="label-nombre">NOMBRE</label>
+            <input
+              type="text"
+              placeholder="Tu Nombre"
+              id="input-nombre"
+              class="input-nombre"
+              required
+            />
+          </div>
 
-                <div class="contact__form-input" id="email">
-                    <label for="input-email" class="label-email">EMAIL</label>
-                    <input type="text" id="input-email" class="input-email">
-                </div>
-                <div class="contact__form-input" id="mensaje">
-                    <label for="mensaje" class="label-mensaje">Mensaje</label>
-                    <textarea name="" id="mensaje" class="mensaje"></textarea>
-                </div>
-                <button class="send-button">Enviar</button>
-            </div>
-        </section>
-        <footer>
-            <div class="footer__group1">
-                <img src="/portfolio/src/liobarrozoLogo.png" alt="" class="logo">
-                <p>® 2024 liobarrozo</p>
-            </div>
-            <div class="footer__rrss">
-                <div class="footer__rrss-instagram">
-                    <img src="/portfolio/src/rrss/instagram.png" alt="" id="instagram">
-                    <a href="https://www.instagram.com/liobarrozo/" class="rrss-text">Instagram</a>
-                </div>
-                <div class="footer__rrss-linkedin">
-                    <img src="/portfolio/src/rrss/linkedin.png" alt="" id="linkedin">
-                    <a href="https://www.linkedin.com/in/alejo-leonel-barrozo-56b05527a/" class="rrss-text">Linkedin</a>
-                </div>
-                <div class="footer__rrss-github">
-                    <img src="/portfolio/src/rrss/github.png" alt="" id="github">
-                    <a href="https://github.com/liobarrozo" class="rrss-text">Github</a>
-                </div>
-                
-            </div>
-            <img src="" alt="" class="background">
-        </footer>
+          <div class="contact__form-input" id="email">
+            <label for="input-email" class="label-email">EMAIL</label>
+            <input
+              type="text"
+              placeholder="tucorreo@gmail.com"
+              id="input-email"
+              class="input-email"
+              required
+            />
+          </div>
+          <div class="contact__form-input" id="mensaje">
+            <label for="mensaje" class="label-mensaje">Mensaje</label>
+            <textarea
+              name="mensaje"
+              placeholder="Hola liobarrozo!"
+              id="mensaje"
+              class="mensaje"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="send-button">Enviar</button>
+        </form>
+      </section>
+      <footer>
+        <div class="footer__group1">
+          <img src="/portfolio/src/liobarrozoLogo.png" alt="" class="logo" />
+          <p>® 2024 liobarrozo</p>
+        </div>
+        <div class="footer__rrss">
+          <div class="footer__rrss-instagram">
+            <img
+              src="/portfolio/src/rrss/instagram.png"
+              alt=""
+              id="instagram"
+            />
+            <a href="https://www.instagram.com/liobarrozo/" class="rrss-text"
+              >Instagram</a
+            >
+          </div>
+          <div class="footer__rrss-linkedin">
+            <img src="/portfolio/src/rrss/linkedin.png" alt="" id="linkedin" />
+            <a
+              href="https://www.linkedin.com/in/alejo-leonel-barrozo-56b05527a/"
+              class="rrss-text"
+              >Linkedin</a
+            >
+          </div>
+          <div class="footer__rrss-github">
+            <img src="/portfolio/src/rrss/github.png" alt="" id="github" />
+            <a href="https://github.com/liobarrozo" class="rrss-text">Github</a>
+          </div>
+        </div>
+        <img src="" alt="" class="background" />
+      </footer>
     </head>
-</body>
+  </body>
 </html>
