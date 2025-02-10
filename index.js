@@ -4,17 +4,18 @@ document.addEventListener("DOMContentLoaded"),
 
     const form = document.getElementById("contact__form");
 
-    form.addEventListener("submit", function (event) {});
-    event.preventDefault();
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-    emailjs.sendForm("service_9q4h23v", "template_ojtr8l9", form).then(
-      function (responde) {
-        alert("Mensaje enviado correctamente.");
-        form.reset();
-      },
-      function (error) {
-        alert("Envío de mensaje fallido. Por favor intente nuevamente");
-        console.error("Error:", error);
-      }
-    );
+      emailjs.sendForm("service_9q4h23v", "template_ojtr8l9", form).then(
+        function (responde) {
+          alert("Mensaje enviado correctamente.");
+          form.reset();
+        },
+        function (error) {
+          alert("Envío de mensaje fallido. Por favor intente nuevamente");
+          console.error("Error:", error);
+        }
+      );
+    });
   };
