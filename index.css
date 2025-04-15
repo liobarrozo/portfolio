@@ -257,6 +257,70 @@ h3 {
   height: 138px;
 }
 
+/*Projects*/
+#h2__projects{
+  color: black;
+}
+#projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+  background-image: url(images/puntitos.png);
+
+}
+
+#projects__container{
+  display: flex;
+  flex-direction: row;
+}
+
+.project-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h4__projects{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.project-card__image{
+  width: 150px;
+  height: 150px;
+}
+.project-card__text{
+  width: 50%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif; 
+}
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 17px;
+  background: #3442d9;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
 /*Contact*/
 .contact {
   background-color: black;
