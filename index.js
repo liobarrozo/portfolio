@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    emailjs.sendForm("service_9q4h23v", "template_ojtr8l9", form).then(
+    emailjs.sendForm("service_ckqiii8", "template_ojtr8l9", form).then(
       function (responde) {
         alert("Mensaje enviado correctamente.");
         form.reset();
