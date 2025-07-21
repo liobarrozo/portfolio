@@ -9,10 +9,11 @@ html {
 
 .home {
   background-color: white;
+  position: relative;
+  z-index: 1;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url(images/puntitos.png);
   /*padding-bottom: 20px;*/
 }
 @media (min-width: 769px) {
@@ -76,11 +77,23 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 @media (min-width: 769px) {
   .home__welcome {
     flex-direction: row;
   }
+}
+#lottie-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none; /* para que no bloquee clicks */
+  opacity: 0.5; /* podés ajustarlo según tu gusto */
 }
 
 .home__welcome-text {
@@ -107,7 +120,8 @@ h1 {
 }
 
 #me-photo {
-  max-width: 80%;
+  z-index: 2;
+  max-width: 90%;
   height: auto;
   margin-bottom: 0px;
   margin-top: auto;
