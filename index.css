@@ -67,7 +67,11 @@ header {
     font-weight: 600;
     font-size: 20px;
     background: transparent;
+    transition: filter 0.85s ease-in-out;
     cursor: pointer;
+  }
+  .header__buttons:hover{
+    color: #4807b0;
   }
 }
 
@@ -151,7 +155,7 @@ h1 {
 }
 
 #me-photo:hover {
-  filter: grayscale(0%);
+  filter: grayscale(0%) brightness(0.8);
 }
 
 @media (max-width: 768px) {
@@ -163,7 +167,7 @@ h1 {
     object-fit: contain; /* Mantiene las proporciones de la imagen */
     margin: 0 auto; /* Centra la imagen horizontalmente */
     display: block; /* Asegura que la imagen respete las reglas de maquetación */
-    filter: grayscale(0%);
+    filter: grayscale(0%) brightness(0.8);
   }
 
   .home__welcome {
