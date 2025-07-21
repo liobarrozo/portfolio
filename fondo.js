@@ -3,5 +3,5 @@ lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'assets/fondo.json' // ajustá según tu estructura
+    path: 'assets/fondo.json' 
   });

@@ -353,10 +353,12 @@ h3 {
   background-color: black;
   display: flex;
   flex-direction: column;
+  height: 85vh;
 }
 @media (min-width: 769px) {
   .contact {
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -368,36 +370,47 @@ h2 {
   h2 {
     font-size: 45px;
     width: 40%;
-    margin-top: 90px;
   }
 }
 
 .contact__form {
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  height: 85%;
 }
 
-@media (min-height: 769px) {
+@media (min-width: 769px) {
   .contact__form {
-    height: 60vh;
+    justify-content: center;
     width: 30%;
-    margin-top: 90px;
   }
 }
 
 .contact__form-input {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
   height: auto;
   margin-left: 8%;
   margin-right: 8%;
+  margin-bottom: 15px;
 }
 .contact__form-input > label {
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-family: "Open Sans", sans-serif;
+}
+@media (max-width:769px){
+  .contact__form-input > label{
+    font-size: 20px;
+  }
+}
+
+@media (max-width:769px){
+  .contact__form-input > input{
+    width: 80%;
+  }
 }
 .contact__form-input > input {
   height: 35px;
@@ -406,20 +419,27 @@ h2 {
 .contact__form-input > textarea {
   height: 125px;
 }
-#nombre,
-#email {
+
+@media (max-width:769px){
+  .contact__form-input > textarea{
+    width: 80%;
+  }
+}
+#nombre, #email {
   height: 15%;
 }
 
 .send-button {
   margin-top: 15%;
-  background-color: #ffd953;
-  color: black;
+  background-color: #541bff;
+  color: white;
   font-size: 18px;
   font-weight: 700;
   margin-left: 8%;
   margin-right: 8%;
   height: 40px;
+  border-radius: 7px 1px;
+  cursor:pointer;
 }
 
 /*footer*/
