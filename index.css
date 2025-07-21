@@ -146,11 +146,16 @@ h1 {
   margin-bottom: 0px;
   margin-top: auto;
   max-height: 100%;
+  filter: grayscale(100%) brightness(1.1);
+  transition: filter 0.7s ease-in-out;
+}
+
+#me-photo:hover {
+  filter: grayscale(0%);
 }
 
 @media (max-width: 768px) {
   #me-photo {
-
     margin-top: auto;
     margin-bottom: 1px;
     max-width: 100%; /* La imagen se adapta al ancho del contenedor */
@@ -158,6 +163,7 @@ h1 {
     object-fit: contain; /* Mantiene las proporciones de la imagen */
     margin: 0 auto; /* Centra la imagen horizontalmente */
     display: block; /* Asegura que la imagen respete las reglas de maquetación */
+    filter: grayscale(0%);
   }
 
   .home__welcome {
@@ -544,6 +550,7 @@ footer {
 .footer__rrss img {
   width: 38px;
   height: 38px;
+  cursor: pointer;
 }
 
 .footer__rrss-instagram,
