@@ -29,9 +29,8 @@ header {
   padding: 20px;
 }
 .logo {
-  width: 70px;
-  height: 70px;
-
+  width: 80px;
+  height: 80px;
   margin-left: 20px;
   margin-right: auto;
 }
@@ -68,6 +67,7 @@ header {
     font-weight: 600;
     font-size: 20px;
     background: transparent;
+    cursor: pointer;
   }
 }
 
@@ -76,7 +76,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   z-index: 1;
 }
@@ -96,7 +96,7 @@ header {
   opacity: 0.5; /* podés ajustarlo según tu gusto */
 }
 #lottie-bg svg * {
-  stroke: #6519de !important;
+  stroke: #4807b0 !important;
 }
 
 
@@ -118,6 +118,7 @@ h1 {
   font-size: 50px;
   font-weight: 900;
   font-family: "Open Sans", sans-serif;
+  cursor: default;
 }
 #h1_up {
   margin-top: 110px;
@@ -125,7 +126,7 @@ h1 {
 
 #me-photo {
   z-index: 2;
-  max-width: 90%;
+  max-width: 50%;
   height: auto;
   margin-bottom: 0px;
   margin-top: auto;
@@ -134,10 +135,11 @@ h1 {
 
 @media (max-width: 768px) {
   #me-photo {
-    position: relative;
-    bottom: 0;
+
+    margin-top: auto;
+    margin-bottom: 1px;
     max-width: 100%; /* La imagen se adapta al ancho del contenedor */
-    max-height: 100%; /* Asegura que la imagen no exceda la altura del contenedor */
+    max-height: 90%; /* Asegura que la imagen no exceda la altura del contenedor */
     object-fit: contain; /* Mantiene las proporciones de la imagen */
     margin: 0 auto; /* Centra la imagen horizontalmente */
     display: block; /* Asegura que la imagen respete las reglas de maquetación */
