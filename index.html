@@ -7,151 +7,235 @@
     <link rel="icon" href="images/liobarrozoLogo.png" type="image/x-icon" />
     <link rel="stylesheet" href="index.css" />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-      <section class="home">
-        <header>
-          <img src="images/liobarrozoLogo.png" alt="" class="logo" />
-          <button class="header__main-button"></button>
-          <div class="header__options-button">
-            <button onclick="location.href='#about-me'" class="header__buttons">Quien Soy</button>
-            <button onclick="location.href='#service'" class="header__buttons">Servicios</button>
-            <button onclick="location.href='#projects'" class="header__buttons">Proyectos</button>
-            <button onclick="location.href='#contact'" class="header__buttons">Escribime</button>
-          </div>
-        </header>
-        <div class="home__welcome">
-          <div id="lottie-bg" class="anim-bg"></div>
-          <div class="home__welcome-text">
-            <h1 id="h1_up">Soy liobarrozo</h1>
-            <h2 id="h1_down">Desarrollador Web</h2>
-          </div>
-          <img src="images/liobarrozo_portfolio.webp" alt="" id="me-photo" />
+    <section class="home">
+      <header>
+        <img src="images/liobarrozoLogo.png" alt="" class="logo" />
+        <button class="header__main-button"></button>
+        <div class="header__options-button">
+          <button onclick="location.href='#about-me'" class="header__buttons">
+            Quien Soy
+          </button>
+          <button onclick="location.href='#service'" class="header__buttons">
+            Servicios
+          </button>
+          <button onclick="location.href='#projects'" class="header__buttons">
+            Proyectos
+          </button>
+          <button onclick="location.href='#contact'" class="header__buttons">
+            Escribime
+          </button>
         </div>
-      </section>
-      <section id="about-me" class="about-me">
-        <div id="backend__animation" ></div>
-        <div class="home__container-texts">
-          <h2 id="h2__about-me">Conoceme</h2>
-          <p class="text_about-me">
-            Soy una persona apasionada por la tecnología y la programación. Actualmente me estoy formando en desarrollo web, explorando herramientas y lenguajes que me permiten crear soluciones útiles y funcionales. Además, cuento con experiencia en soporte técnico, lo que me dio una base sólida para entender y resolver problemas de forma práctica y eficiente.
+      </header>
+      <div class="home__welcome">
+        <div id="lottie-bg" class="anim-bg"></div>
+        <div class="home__welcome-text">
+          <h1 id="h1_up">Soy liobarrozo</h1>
+          <h2 id="h1_down">Desarrollador Web</h2>
+        </div>
+        <img src="images/liobarrozo_portfolio.webp" alt="" id="me-photo" />
+      </div>
+    </section>
+    <section id="about-me" class="about-me">
+      <div id="backend__animation"></div>
+      <div class="home__container-texts">
+        <h2 id="h2__about-me">Conoceme</h2>
+        <p class="text_about-me">
+          Soy una persona apasionada por la tecnología y la programación.
+          Actualmente me estoy formando en desarrollo web, explorando
+          herramientas y lenguajes que me permiten crear soluciones útiles y
+          funcionales. Además, cuento con experiencia en soporte técnico, lo que
+          me dio una base sólida para entender y resolver problemas de forma
+          práctica y eficiente.
+        </p>
+      </div>
+    </section>
+    <section id="service" class="service">
+      <h2 id="h2__services">Mis Servicios</h2>
+      <div class="service__content-container">
+        <div class="service__content">
+          <img
+            src="images/technical-support_2593341.png"
+            alt=""
+            class="img__pc"
+          />
+          <h3 class="h3__name-service">Soporte Técnico</h3>
+          <p class="text_service">
+            Ofrezco mis servicios como Agente y Administración de Soporte
+            Técnico a empresas que necesitan asistencia técnica sus
+            productos/servicios. Me encargo de ayudar a sus clientes finales a
+            resolver conflictos con el sistema, garantizando una atención clara
+            y eficiente. Tengo experiencia implementando paneles de soporte
+            técnico , lo que permite optimizar la gestión de tickets y mejorar
+            la experiencia de atención al cliente.
           </p>
         </div>
-      </section>
-      <section id="service" class="service">
-        <h2 id="h2__services">Mis Servicios</h2>
-        <div class="service__content-container">
-          <div class="service__content">
-            <img src="images/technical-support_2593341.png" alt="" class="img__pc" />
-            <h3 class="h3__name-service">Soporte Técnico</h3>
-            <p class="text_service">
-              Ofrezco mis servicios como Agente y Administración de Soporte Técnico a empresas que necesitan asistencia técnica sus productos/servicios. Me encargo de ayudar a sus clientes finales a resolver conflictos con el sistema, garantizando una atención clara y eficiente. Tengo experiencia implementando paneles de soporte técnico , lo que permite optimizar la gestión de tickets y mejorar la experiencia de atención al cliente.
-            </p>
-          </div>
-          <div class="service__content">
-            <img src="images/ux_1488592.png" alt="" class="img__pc" />
-            <h3 class="h3__name-service">Desarrollo Frontend</h3>
-            <p class="text_service">
-              En constante formación, explorando nuevas herramientas y buenas prácticas para crear sitios web modernos y funcionales. Trabajo con HTML, CSS y JavaScript, y tengo experiencia con frameworks de CSS como Bootstrap y Bulma, lo que me permite desarrollar interfaces adaptables. Además, cuento con conocimientos en diseño web responsive, asegurando que los sitios se vean y funcionen bien en cualquier dispositivo.
-            </p>
-          </div>
-          <div class="service__content">
-            <img src="images/browser_12698448.png" alt="" class="img__pc" />
-            <h3 class="h3__name-service-2">Asesoramiento en Proyectos Web</h3>
-            <p class="text_service">
-              Acompaño a personas o negocios que desean lanzar su sitio web desde cero o mejorar el que ya tienen. Ayudo a definir objetivos, estructura, herramientas necesarias y mejores prácticas. Ya sea una landing page, una tienda online o una web institucional, asesoro en cada paso del proyecto para que sea eficiente, accesible y escalable.
-            </p>
-          </div>
+        <div class="service__content">
+          <img src="images/ux_1488592.png" alt="" class="img__pc" />
+          <h3 class="h3__name-service">Desarrollo Frontend</h3>
+          <p class="text_service">
+            En constante formación, explorando nuevas herramientas y buenas
+            prácticas para crear sitios web modernos y funcionales. Trabajo con
+            HTML, CSS y JavaScript, y tengo experiencia con frameworks de CSS
+            como Bootstrap y Bulma, lo que me permite desarrollar interfaces
+            adaptables. Además, cuento con conocimientos en diseño web
+            responsive, asegurando que los sitios se vean y funcionen bien en
+            cualquier dispositivo.
+          </p>
         </div>
-      </section>
-      <section id="projects">
-        <h2 id="h2__projects">Mis Proyectos</h2>
-        <div id="projects__container">
-          <div class="project-card">
-            <img class="project-card__image" src="./images/ChatGPT_Image_15_abr_2025__02_20_11_p.m.-removebg-preview.png" alt="">
-            <h3>Cerativerse</h3>
-            <a class="btn" href="https://cerativerse.liobarrozo.com/">Acceder</a>
-            <h4 class="h4__projects">Desarrollo Web</h4>
-            <p class="project-card__text">Proyecto personal solicitado por <a href="apx.school">apx</a>, que se encarga de extrer datos de una API y construir items en base a esos datos. Cuenta con tablas de canciones y función de búsqueda global</p>
-          </div>
-          <div class="project-card">
-            <img class="project-card__image" src="./images/allnexo.jpeg" alt="">
-            <h3>Allnexo Tickets</h3>
-            <a class="btn" href="https://allnexo.freshdesk.com/support/home"> Acceder</a>
-            <h4 class="h4__projects">Soporte Técnico</h4>
-            <p class="project-card__text">Sistema de Soporte Técnico mediante tickets, implementado con la herramienta Freshdesk, con el fin de optimizar las solicitudes y problemas de los clientes. Cuenta con panel interno donde los Agentes de soporte visualizan cada uno de los tickets</p>
-          </div>
+        <div class="service__content">
+          <img src="images/browser_12698448.png" alt="" class="img__pc" />
+          <h3 class="h3__name-service-2">Asesoramiento en Proyectos Web</h3>
+          <p class="text_service">
+            Acompaño a personas o negocios que desean lanzar su sitio web desde
+            cero o mejorar el que ya tienen. Ayudo a definir objetivos,
+            estructura, herramientas necesarias y mejores prácticas. Ya sea una
+            landing page, una tienda online o una web institucional, asesoro en
+            cada paso del proyecto para que sea eficiente, accesible y
+            escalable.
+          </p>
         </div>
-      </section>
-      <section id="contact" class="contact">
-        <h2 class="h2__contact">Escribime</h2>
-        <form id="contact__form" class="contact__form">
-          <div class="contact__form-input" id="nombre">
-            <label for="input-nombre" class="label-nombre">Nombre </label>
-            <input
-              type="text"
-              placeholder="Tu Nombre"
-              id="input-nombre"
-              class="input-nombre"
-              required
-              name="from_name"
-            />
-          </div>
-          <div class="contact__form-input" id="email">
-            <label for="input-email" class="label-email">Email</label>
-            <input
-              type="text"
-              placeholder="tucorreo@gmail.com"
-              id="input-email"
-              class="input-email"
-              required
-            />
-          </div>
-          <div class="contact__form-input" id="mensaje">
-            <label for="mensaje" class="label-mensaje">Mensaje</label>
-            <textarea
-              placeholder="Hola liobarrozo!"
-              id="mensaje"
-              class="mensaje"
-              name="message"
-              required
-            ></textarea>
-          </div>
+      </div>
+    </section>
+    <section class="tech-stack">
+      <h2>Tecnologías que utilizo</h2>
+      <div class="icons">
+        <img src="assets/icons/html5.svg" alt="HTML" class="icon html" />
+        <img src="assets/icons/css.svg" alt="CSS" class="icon css" />
+        <img
+          src="assets/icons/javascript.svg"
+          alt="JavaScript"
+          class="icon js"
+        />
+        <img src="assets/icons/python.svg" alt="Python" class="icon python" />
+        <img src="assets/icons/nodejs.svg" alt="Node.js" class="icon node" />
+        <img
+          src="assets/icons/bootstrap.svg"
+          alt="Bootstrap"
+          class="icon bootstrap"
+        />
+        <img
+          src="assets/icons/express.svg"
+          alt="Express"
+          class="icon express"
+        />
+        <img src="assets/icons/mongodb.svg" alt="MongoDB" class="icon mongo" />
+        <img src="assets/icons/github.svg" alt="GitHub" class="icon github" />
+        <img
+          src="assets/icons/postman.svg"
+          alt="Postman"
+          class="icon postman"
+        />
+      </div>
+    </section>
 
-          <div class="form-button">
+    <section id="projects">
+      <h2 id="h2__projects">Mis Proyectos</h2>
+      <div id="projects__container">
+        <div class="project-card">
+          <img
+            class="project-card__image"
+            src="./images/ChatGPT_Image_15_abr_2025__02_20_11_p.m.-removebg-preview.png"
+            alt=""
+          />
+          <h3>Cerativerse</h3>
+          <a class="btn" href="https://cerativerse.liobarrozo.com/">Acceder</a>
+          <h4 class="h4__projects">Desarrollo Web</h4>
+          <p class="project-card__text">
+            Proyecto personal solicitado por <a href="apx.school">apx</a>, que
+            se encarga de extrer datos de una API y construir items en base a
+            esos datos. Cuenta con tablas de canciones y función de búsqueda
+            global
+          </p>
+        </div>
+        <div class="project-card">
+          <img class="project-card__image" src="./images/allnexo.jpeg" alt="" />
+          <h3>Allnexo Tickets</h3>
+          <a class="btn" href="https://allnexo.freshdesk.com/support/home">
+            Acceder</a
+          >
+          <h4 class="h4__projects">Soporte Técnico</h4>
+          <p class="project-card__text">
+            Sistema de Soporte Técnico mediante tickets, implementado con la
+            herramienta Freshdesk, con el fin de optimizar las solicitudes y
+            problemas de los clientes. Cuenta con panel interno donde los
+            Agentes de soporte visualizan cada uno de los tickets
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="h2__contact">Escribime</h2>
+      <form id="contact__form" class="contact__form">
+        <div class="contact__form-input" id="nombre">
+          <label for="input-nombre" class="label-nombre">Nombre </label>
+          <input
+            type="text"
+            placeholder="Tu Nombre"
+            id="input-nombre"
+            class="input-nombre"
+            required
+            name="from_name"
+          />
+        </div>
+        <div class="contact__form-input" id="email">
+          <label for="input-email" class="label-email">Email</label>
+          <input
+            type="text"
+            placeholder="tucorreo@gmail.com"
+            id="input-email"
+            class="input-email"
+            required
+          />
+        </div>
+        <div class="contact__form-input" id="mensaje">
+          <label for="mensaje" class="label-mensaje">Mensaje</label>
+          <textarea
+            placeholder="Hola liobarrozo!"
+            id="mensaje"
+            class="mensaje"
+            name="message"
+            required
+          ></textarea>
+        </div>
+        <div class="form-button">
           <button type="submit" class="send-button">Enviar</button>
-          </div>
-        </form>
-        <script src="./index.js"></script>
-      </section>
-      <footer>
-        <div class="footer__group1">
-          <img src="images/liobarrozoLogo.png" alt="" class="logo" />
-          <p>® 2025 liobarrozo</p>
         </div>
-        <div class="footer__rrss">
-          <div class="footer__rrss-instagram">
-            <img src="images/rrss/instagram.png" alt="" id="instagram" />
-            <a href="https://www.instagram.com/liobarrozo/" class="rrss-text"
-              >Instagram</a
-            >
-          </div>
-          <div class="footer__rrss-linkedin">
-            <img src="images/rrss/linkedin.png" alt="" id="linkedin" />
-            <a
-              href="https://www.linkedin.com/in/alejo-leonel-barrozo-56b05527a/"
-              class="rrss-text"
-              >Linkedin</a
-            >
-          </div>
-          <div class="footer__rrss-github">
-            <img src="images/rrss/github.png" alt="" id="github" />
-            <a href="https://github.com/liobarrozo" class="rrss-text">Github</a>
-          </div>
+      </form>
+      <script src="./index.js"></script>
+    </section>
+    <footer>
+      <div class="footer__group1">
+        <img src="images/liobarrozoLogo.png" alt="" class="logo" />
+        <p>® 2025 liobarrozo</p>
+      </div>
+      <div class="footer__rrss">
+        <div class="footer__rrss-instagram">
+          <img src="images/rrss/instagram.png" alt="" id="instagram" />
+          <a href="https://www.instagram.com/liobarrozo/" class="rrss-text"
+            >Instagram</a
+          >
         </div>
-        <img src="" alt="" class="background" />
-      </footer>
+        <div class="footer__rrss-linkedin">
+          <img src="images/rrss/linkedin.png" alt="" id="linkedin" />
+          <a
+            href="https://www.linkedin.com/in/alejo-leonel-barrozo-56b05527a/"
+            class="rrss-text"
+            >Linkedin</a
+          >
+        </div>
+        <div class="footer__rrss-github">
+          <img src="images/rrss/github.png" alt="" id="github" />
+          <a href="https://github.com/liobarrozo" class="rrss-text">Github</a>
+        </div>
+      </div>
+      <img src="" alt="" class="background" />
+    </footer>
     <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
     <script src="animations.js"></script>
   </body>
