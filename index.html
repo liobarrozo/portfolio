@@ -46,12 +46,14 @@
       <div class="home__container-texts">
         <h2 id="h2__about-me">Conoceme</h2>
         <p class="text_about-me">
-          Soy una persona apasionada por la tecnología y la programación.
-          Actualmente me estoy formando en desarrollo web, explorando
-          herramientas y lenguajes que me permiten crear soluciones útiles y
-          funcionales. Además, cuento con experiencia en soporte técnico, lo que
-          me dio una base sólida para entender y resolver problemas de forma
-          práctica y eficiente.
+          Desarrollador web en formación con experiencia creando páginas web y
+          aplicaciones web dinámicas. Me especializo en diseñar sitios
+          accesibles, responsivos y funcionales, que comuniquen de forma clara y
+          efectiva. También desarrollo aplicaciones web que permiten gestionar
+          información, procesar formularios y ofrecer experiencias interactivas
+          adaptadas a cada proyecto. Me motiva seguir aprendiendo y mejorar en
+          cada línea de código, buscando siempre soluciones prácticas, limpias y
+          pensadas para el usuario.
         </p>
       </div>
     </section>
@@ -59,45 +61,23 @@
       <h2 id="h2__services">Mis Servicios</h2>
       <div class="service__content-container">
         <div class="service__content">
-          <img
-            src="images/technical-support_2593341.png"
-            alt=""
-            class="img__pc"
-          />
+          <div id="ico_dev"></div>
+          <h3 class="h3__name-service">Desarrollo Web</h3>
+          <p class="text_service">
+            Ofrezco servicios de desarrollo web tanto en modalidad freelance
+            como integrándome a equipos de trabajo en empresas. Diseño y
+            construyo sitios web y aplicaciones que se adaptan a las necesidades
+            del cliente, cuidando usabilidad, funcionalidad y rendimiento. En
+            constante formación en tecnologías tanto Front-End como Back-End.
+          </p>
+        </div>
+        <div class="service__content">
+          <div id="ico_support"></div>
           <h3 class="h3__name-service">Soporte Técnico</h3>
           <p class="text_service">
-            Ofrezco mis servicios como Agente y Administración de Soporte
-            Técnico a empresas que necesitan asistencia técnica sus
-            productos/servicios. Me encargo de ayudar a sus clientes finales a
-            resolver conflictos con el sistema, garantizando una atención clara
-            y eficiente. Tengo experiencia implementando paneles de soporte
-            técnico , lo que permite optimizar la gestión de tickets y mejorar
-            la experiencia de atención al cliente.
-          </p>
-        </div>
-        <div class="service__content">
-          <img src="images/ux_1488592.png" alt="" class="img__pc" />
-          <h3 class="h3__name-service">Desarrollo Frontend</h3>
-          <p class="text_service">
-            En constante formación, explorando nuevas herramientas y buenas
-            prácticas para crear sitios web modernos y funcionales. Trabajo con
-            HTML, CSS y JavaScript, y tengo experiencia con frameworks de CSS
-            como Bootstrap y Bulma, lo que me permite desarrollar interfaces
-            adaptables. Además, cuento con conocimientos en diseño web
-            responsive, asegurando que los sitios se vean y funcionen bien en
-            cualquier dispositivo.
-          </p>
-        </div>
-        <div class="service__content">
-          <img src="images/browser_12698448.png" alt="" class="img__pc" />
-          <h3 class="h3__name-service-2">Asesoramiento en Proyectos Web</h3>
-          <p class="text_service">
-            Acompaño a personas o negocios que desean lanzar su sitio web desde
-            cero o mejorar el que ya tienen. Ayudo a definir objetivos,
-            estructura, herramientas necesarias y mejores prácticas. Ya sea una
-            landing page, una tienda online o una web institucional, asesoro en
-            cada paso del proyecto para que sea eficiente, accesible y
-            escalable.
+            Brindo asistencia técnica directa, diagnosticando problemas junto al
+            cliente y ofreciendo soluciones eficientes para restaurar y
+            optimizar el funcionamiento del software.
           </p>
         </div>
       </div>
@@ -134,41 +114,47 @@
       </div>
     </section>
 
-    <section id="projects">
-      <h2 id="h2__projects">Mis Proyectos</h2>
-      <div id="projects__container">
-        <div class="project-card">
-          <img
-            class="project-card__image"
-            src="./images/ChatGPT_Image_15_abr_2025__02_20_11_p.m.-removebg-preview.png"
-            alt=""
-          />
-          <h3>Cerativerse</h3>
-          <a class="btn" href="https://cerativerse.liobarrozo.com/">Acceder</a>
-          <h4 class="h4__projects">Desarrollo Web</h4>
-          <p class="project-card__text">
-            Proyecto personal solicitado por <a href="apx.school">apx</a>, que
-            se encarga de extrer datos de una API y construir items en base a
-            esos datos. Cuenta con tablas de canciones y función de búsqueda
-            global
-          </p>
+    <section id="proyects">
+      <h2 class="h2__proyects">Mis Proyectos</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="img/fidelizaya.png" alt="FidelizaYa" />
+          <div class="card-content">
+            <h3 class="h3__card-proyect">FidelizaYa</h3>
+            <p>
+              Plataforma de fidelización para comercios, con carga de tickets,
+              validación y panel administrativo en tiempo real.
+            </p>
+            <a
+              href="https://fidelizaya-demo.com"
+              target="_blank"
+              class="btn-proyecto"
+              >Ver proyecto</a
+            >
+          </div>
         </div>
-        <div class="project-card">
-          <img class="project-card__image" src="./images/allnexo.jpeg" alt="" />
-          <h3>Allnexo Tickets</h3>
-          <a class="btn" href="https://allnexo.freshdesk.com/support/home">
-            Acceder</a
-          >
-          <h4 class="h4__projects">Soporte Técnico</h4>
-          <p class="project-card__text">
-            Sistema de Soporte Técnico mediante tickets, implementado con la
-            herramienta Freshdesk, con el fin de optimizar las solicitudes y
-            problemas de los clientes. Cuenta con panel interno donde los
-            Agentes de soporte visualizan cada uno de los tickets
-          </p>
+
+        <div class="card">
+          <img src="img/portfolio.png" alt="Mi portfolio" />
+          <div class="card-content">
+            <h3 class="h3__card-proyect">Mi Portfolio</h3>
+            <p>
+              Portfolio web donde muestro mis servicios, tecnologías y proyectos
+              desarrollados con enfoque profesional.
+            </p>
+            <a
+              href="https://miportfolio.com"
+              target="_blank"
+              class="btn-proyecto"
+              >Ver proyecto</a
+            >
+          </div>
         </div>
+
+        <!-- Agregá más cards según tus proyectos -->
       </div>
     </section>
+
     <section id="contact" class="contact">
       <h2 class="h2__contact">Escribime</h2>
       <form id="contact__form" class="contact__form">
