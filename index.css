@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.home {
+#home {
   background-color: white;
   position: relative;
   z-index: 1;
@@ -414,7 +414,7 @@ h1 {
 }
 
 /*Projects*/
-#proyects {
+#projects {
   padding: 3rem 1rem;
   background-color: #f8f8f8;
   text-align: center;
@@ -449,10 +449,19 @@ h1 {
   transform: translateY(-2px);
 }
 
-.card img {
+.card-img {
+  aspect-ratio: 10/9;
   width: 100%;
-  height: 180px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .h3__card-proyect {

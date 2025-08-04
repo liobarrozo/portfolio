@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <section class="home">
+    <section id="home">
       <header>
         <img src="images/liobarrozoLogo.png" alt="" class="logo" />
         <button class="header__main-button"></button>
@@ -113,12 +113,31 @@
         />
       </div>
     </section>
-
-    <section id="proyects">
+    <section id="projects">
       <h2 class="h2__proyects">Mis Proyectos</h2>
       <div class="cards-container">
         <div class="card">
-          <img src="img/fidelizaya.png" alt="FidelizaYa" />
+          <div class="card-img">
+            <img
+              src="images/Mendo API_20250721_173340_0002.webp"
+              alt="MendoAPI"
+            />
+          </div>
+          <div class="card-content">
+            <h3 class="h3__card-proyect">MendoAPI</h3>
+            <p>
+              API que centraliza datos estructurados sobre los
+              <strong>departamentos de Mendoza</strong>. Diseñada para
+              integrarse fácilmente en sitios web o aplicaciones que necesiten
+              información territorial o demográfica.
+            </p>
+            <a href="https://mendoapi.com" target="_blank" class="btn-proyecto"
+              >Ver proyecto</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/FidelizaYa.webp" alt="FidelizaYa" />
           <div class="card-content">
             <h3 class="h3__card-proyect">FidelizaYa</h3>
             <p>
@@ -135,19 +154,14 @@
         </div>
 
         <div class="card">
-          <img src="img/portfolio.png" alt="Mi portfolio" />
+          <img src="images/portfolio.webp" alt="Mi portfolio" />
           <div class="card-content">
             <h3 class="h3__card-proyect">Mi Portfolio</h3>
             <p>
               Portfolio web donde muestro mis servicios, tecnologías y proyectos
               desarrollados con enfoque profesional.
             </p>
-            <a
-              href="https://miportfolio.com"
-              target="_blank"
-              class="btn-proyecto"
-              >Ver proyecto</a
-            >
+            <a href="#home" class="btn-proyecto">Ver proyecto</a>
           </div>
         </div>
 
